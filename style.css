@@ -1,0 +1,271 @@
+@font-face {
+    font-family: "gilroy";
+    src: url("./Fontes/Gilroy-Light.otf");
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: "gilroy";
+    src: url("./Fontes/Gilroy-ExtraBold.otf");
+    font-weight: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #500000;
+}
+
+input, textarea {
+    font-family: 'gilroy';
+    font-weight: 100;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: black;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: absolute;
+    width: calc(100% - 200px);
+    z-index: 1;
+}
+
+header h1 {
+    font-family: 'gilroy';
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+}
+
+header .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header .dropdown svg {
+    fill: white;
+    width: 32px;
+    cursor: pointer;
+}
+
+header .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #500000;
+    min-width: 130px;
+    left: -98px;
+    z-index: 2;
+}
+
+header .dropdown .dropdown-content a {
+    color: white;
+    font-family: 'gilroy';
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 12px 16px;
+    text-align: right;    
+    transition: background-color 0.4s;
+}
+
+header .dropdown .dropdown-content a:hover {
+    background-color: #250000;    
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+section {
+    height: 100vh;
+    padding: 0 100px;
+    position: relative;
+}
+
+#primary-screen {
+    background: url("./IMG/akatsuki.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#primary-screen h1 {
+    font-family: 'gilroy';
+    font-weight: 800;
+    font-size: 75px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#primary-screen p {
+    font-family: 'gilroy';
+    font-weight: 100;
+    font-size: 24px;
+    color: white;
+    width: 410px;
+    margin-bottom: 20px;
+}
+
+#primary-screen a {
+    background-color: #500000;
+    color: white;
+    font-family: 'gilroy';
+    font-weight: 100;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 16px;
+    transition: background-color 0.4s;
+}
+
+#primary-screen a:hover {
+    background-color: #250000;
+}
+
+#secundary-screen {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#secundary-screen img {
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    bottom: 0;
+}
+
+#secundary-screen .publication {
+    width: 50%;
+}
+
+#secundary-screen .publication h1 {
+    font-family: 'gilroy';
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+#secundary-screen .publication p {
+    font-family: 'gilroy';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./IMG/akatsuki2.png");
+    background-position: center;
+    background-size: cover;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact form h1 {
+    font-family: 'gilroy';
+    font-weight: 800;
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+#contact form button {
+    align-self: center;
+    border: none;
+    cursor: pointer;
+    background-color: #250000;
+    padding: 12px 16px;
+    color: white;
+    font-family: 'gilroy';
+    font-weight: 100;
+    transition: background-color 0.4s;
+}
+
+#contact form button:hover {
+    background-color: #0f0000;
+}
+
+#contact form * {
+    margin: 12px 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 0 100px;
+}
+
+footer .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+}
+
+footer .info .personal-info {
+    display: flex;
+    align-items: center;
+    font-family: 'gilroy';
+    color: white;
+}
+
+footer .info .personal-info img {
+    width: 100px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+footer .info .personal-info h1 {
+    font-size: 18px;
+}
+
+footer .info .contact {
+    text-align: right;
+    font-family: 'gilroy';
+    color: white;
+}
+
+footer .info .contact h1 {
+    font-size: 18px;
+}
+
+footer .links a {
+    text-decoration: none;
+}
+
+footer .links svg {
+    fill: white;
+    width: 20px;
+    margin: 10px 5px;
+    transition: fill 0.4s;
+}
+
+footer .links svg:hover {
+    fill: rgb(133, 133, 133);
+}
